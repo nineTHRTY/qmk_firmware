@@ -19,3 +19,6 @@
 
 /* SPI Config for LED Driver */
 #define SPI_DRIVER SPID1
+
+/* LEDs off when Sleep */
+#define RGB_DISABLE_WHEN_USB_SUSPENDED
