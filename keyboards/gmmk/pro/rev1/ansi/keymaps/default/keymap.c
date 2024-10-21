@@ -66,3 +66,10 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
     [1] = { ENCODER_CCW_CW(KC_TRNS, KC_TRNS) }
 };
 #endif
+
+/* CAPS Lock LED Indication */
+void rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
+if (IS_HOST_LED_ON(USB_LED_CAPS_LOCK)) {
+        RGB_MATRIX_INDICATOR_SET_COLOR(3, 255, 255, 255); //capslock key
+}
+}
