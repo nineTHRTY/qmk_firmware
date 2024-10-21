@@ -24,3 +24,6 @@
 #define AW20216S_CS_PIN_1 B13
 #define AW20216S_CS_PIN_2 B14
 #define AW20216S_EN_PIN C13
+
+/* LEDs off when Sleep */
+#define RGB_DISABLE_WHEN_USB_SUSPENDED
